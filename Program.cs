@@ -15,6 +15,17 @@
                 DisplayUserInfo(name, number);
                 int result = CalculativeValue(number);
                 Console.WriteLine(" Calculated result:" + result);
+                if (result > 10)
+                {
+                    Console.WriteLine(" The result is greater than 10.");
+                }
+                else
+                {
+                    Console.WriteLine(" The result is 10 or less. ");
+                }
+                Console.Write("\n Would you like to run the  program again? (y/n):");
+                repeat = Console.ReadLine();
+                Console.WriteLine();
             }
 
         }
