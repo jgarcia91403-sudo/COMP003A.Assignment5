@@ -4,16 +4,22 @@
     {
         static void Main(string[] args)
         {
-            string repeat = "y";
-            while (repeat == "y")
+            string repeat;
+            ShowIntroduction();
+            do
             {
                 Console.Write(" Enter your name:");
                 string name = Console.ReadLine();
+
                 Console.Write(" Enter a whole number:");
                 int number = Convert.ToInt32(Console.ReadLine());
+
                 DisplayUserInfo(name, number);
+
                 int result = CalculativeValue(number);
+
                 Console.WriteLine(" Calculated result:" + result);
+
                 if (result > 10)
                 {
                     Console.WriteLine(" The result is greater than 10.");
@@ -25,6 +31,7 @@
                 Console.Write("\n Would you like to run the  program again? (y/n):");
                 repeat = Console.ReadLine();
                 Console.WriteLine();
+            } while (repeat.ToLower() == "y");
                 {
                     Console.WriteLine("program ended.");
                 }
@@ -43,7 +50,6 @@
                     int calculatedResult = value * 2;
                     return calculatedResult;
                 }
-            }
 
         }
     }
