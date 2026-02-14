@@ -26,6 +26,19 @@
                 Console.Write("\n Would you like to run the  program again? (y/n):");
                 repeat = Console.ReadLine();
                 Console.WriteLine();
+                {
+                    Console.WriteLine("program ended.");
+                }
+                static void ShowIntroduction()
+                {
+                    Console.WriteLine(" Welcome to the program organizer!");
+                    Console.WriteLine();
+                }
+                static void DisplayUserInfo(string username, int usernumber)
+                {
+                    Console.WriteLine("\n Hello, " + username + "!");
+                    Console.WriteLine(" You Entered: " + usernumber);
+                }
             }
 
         }
