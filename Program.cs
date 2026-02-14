@@ -4,7 +4,6 @@
     {
         static void Main(string[] args)
         {
-            ShowIntroduction();
             string repeat = "y";
             while (repeat == "y")
             {
@@ -38,6 +37,11 @@
                 {
                     Console.WriteLine("\n Hello, " + username + "!");
                     Console.WriteLine(" You Entered: " + usernumber);
+                }
+                static int CalculativeValue(int value)
+                {
+                    int calculatedResult = value * 2;
+                    return calculatedResult;
                 }
             }
 
