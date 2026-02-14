@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             string repeat;
-            ShowIntroduction();
+            ShowIntroduction(); // this will call the introduction method to display the welcome message when the program starts
             do
             {
                 Console.Write(" Enter your name:");
@@ -20,7 +20,7 @@
 
                 Console.WriteLine(" Calculated result:" + result);
 
-                if (result > 10)
+                if (result > 10) // this will check if the result is greater than 10 or less than and display a message accordingly
                 {
                     Console.WriteLine(" The result is greater than 10.");
                 }
@@ -28,26 +28,26 @@
                 {
                     Console.WriteLine(" The result is 10 or less. ");
                 }
-                Console.Write("\n Would you like to run the  program again? (y/n):");
+                Console.Write("\n Would you like to run the  program again? (y/n):"); // this will run the program again if you hit y and end it if you hit n
                 repeat = Console.ReadLine();
                 Console.WriteLine();
             } while (repeat.ToLower() == "y");
                 {
                     Console.WriteLine("program ended.");
                 }
-                static void ShowIntroduction()
+                static void ShowIntroduction() // this will display a welcome message when you start the program
                 {
                     Console.WriteLine(" Welcome to the program organizer!");
                     Console.WriteLine();
                 }
-                static void DisplayUserInfo(string username, int usernumber)
+                static void DisplayUserInfo(string username, int usernumber) // this method will display the user's name and the number they entered
                 {
                     Console.WriteLine("\n Hello, " + username + "!");
                     Console.WriteLine(" You Entered: " + usernumber);
                 }
                 static int CalculativeValue(int value)
                 {
-                    int calculatedResult = value * 2;
+                    int calculatedResult = value * 2; // this will multiply the number by 2 
                     return calculatedResult;
                 }
 
